@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechSparkKids | Create • Learn • Innovate</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="background">
+  <span class="orb orb1"></span><span class="orb orb2"></span><span class="orb orb3"></span>
+  <div class="grid"></div>
+</div>
+
+<header class="topbar">
+  <a class="logo" href="#home"><span>TS</span> TechSparkKids</a>
+  <button class="menu" onclick="toggleMenu()">☰</button>
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#assets">Give Assets</a>
+    <a href="#ask">Ask Me</a>
+    <a href="#message">Message</a>
+  </nav>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-card">
+    <div class="badge">⚡ Welcome to TechSparkKids</div>
+    <h1>Create. <span>Learn.</span><br>Innovate.</h1>
+    <p>A modern space for technology, creativity, projects and ideas.</p>
+    <div class="hero-buttons">
+      <a class="btn primary" href="#assets">Give Assets for a Video →</a>
+      <a class="btn secondary" href="#about">Explore TechSparkKids</a>
+    </div>
+  </div>
+  <div class="scroll">SCROLL TO EXPLORE ↓</div>
+</section>
+
+<section class="section" id="about">
+  <div class="section-head"><span>01</span><h2>About Me</h2></div>
+  <div class="about-grid">
+    <div class="profile-card">
+      <div class="avatar">TS</div>
+      <h3>TechSparkKids</h3>
+      <p class="muted">Technology • Creativity • Innovation</p>
+    </div>
+    <div class="glass">
+      <h3>Hi! Welcome.</h3>
+      <p>This is the personal space behind TechSparkKids. Here you can introduce yourself, share your projects, experiments, videos and ideas.</p>
+      <p class="muted">Replace this text with your own story, school projects, achievements and interests.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="assets">
+  <div class="section-head"><span>02</span><h2>Give Assets to Make a Video</h2></div>
+  <div class="form-card">
+    <p class="intro">Have photos, ideas or details for a video? Send them here.</p>
+    <form id="assetForm">
+      <div class="two">
+        <label>Name<input required name="name" placeholder="Your name"></label>
+        <label>Email<input required type="email" name="email" placeholder="you@example.com"></label>
+      </div>
+      <label>Video idea<textarea required name="idea" placeholder="Tell me what the video should be about..."></textarea></label>
+      <label>Asset link <input name="link" placeholder="Google Drive / other share link"></label>
+      <label>Extra details<textarea name="details" placeholder="Anything else I should know?"></textarea></label>
+      <button class="btn primary" type="submit">Submit Video Request →</button>
+      <p class="note">This first version opens your email app with the submission details. A free online form backend can be connected later for automatic storage.</p>
+    </form>
+  </div>
+</section>
+
+<section class="section" id="ask">
+  <div class="section-head"><span>03</span><h2>Ask Me</h2></div>
+  <div class="form-card compact">
+    <p class="intro">Have a question about technology, projects or TechSparkKids?</p>
+    <form id="askForm">
+      <label>Your name<input required name="name" placeholder="Your name"></label>
+      <label>Your question<textarea required name="question" placeholder="Type your question..."></textarea></label>
+      <button class="btn primary" type="submit">Send Question →</button>
+    </form>
+  </div>
+</section>
+
+<section class="section" id="message">
+  <div class="section-head"><span>04</span><h2>Message to Me</h2></div>
+  <div class="form-card compact">
+    <p class="intro">Send a message to TechSparkKids.</p>
+    <form id="messageForm">
+      <label>Name<input required name="name" placeholder="Your name"></label>
+      <label>Email<input required type="email" name="email" placeholder="you@example.com"></label>
+      <label>Message<textarea required name="message" placeholder="Write your message..."></textarea></label>
+      <button class="btn primary" type="submit">Send Message →</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div><strong>⚡ TechSparkKids</strong><p>Create • Learn • Innovate</p></div>
+  <p>© 2026 TechSparkKids. Built with HTML, CSS & JavaScript.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
