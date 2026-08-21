@@ -1,14 +1,13 @@
-TECHSPARKKIDS WEBSITE
+TECHSPARKKIDS FINAL VERSION
 
-Files:
-- index.html
-- style.css
-- script.js
+Changes:
+- Forms no longer use mailto or open Gmail.
+- Video Asset form supports both a share link and file uploads.
+- Online submissions are sent to the configured TechSparkKids inbox using FormSubmit.
+- Added Projects and Quick Links sections.
+- Added a thank-you page after online submission.
+- Kept the TechSparkKids profile.jpg.
 
 IMPORTANT:
-1. Open index.html in a browser to test the site.
-2. In script.js, replace YOUR_EMAIL@example.com with the email address where you want submissions to arrive.
-3. The current forms use mailto, so they open the visitor's email app. For true online form storage/file uploads, connect a free form backend later.
-4. To publish for free worldwide, upload these files to a GitHub Pages repository.
-
-The design is responsive and works on phones and computers.
+On the first FormSubmit submission, the receiving email address may need confirmation.
+The current _next address matches the current GitHub Pages URL. If you later rename the repository, update the _next values in index.html.

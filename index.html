@@ -20,7 +20,7 @@
     <a href="#about">About Me</a>
     <a href="#assets">Give Assets</a>
     <a href="#ask">Ask Me</a>
-    <a href="#message">Message</a>
+    <a href="#message">Message</a><a href="#projects">Projects</a><a href="#links">Links</a>
   </nav>
 </header>
 
@@ -32,7 +32,7 @@
     <p>A modern space for technology, creativity, projects and ideas.</p>
     <div class="hero-buttons">
       <a class="btn primary" href="#assets">Give Assets for a Video →</a>
-      <a class="btn secondary" href="#about">Explore TechSparkKids</a>
+      <a class="btn secondary" href="#projects">Explore Projects →</a>
     </div>
   </div>
   <div class="scroll">SCROLL TO EXPLORE ↓</div>
@@ -58,16 +58,20 @@
   <div class="section-head"><span>02</span><h2>Give Assets to Make a Video</h2></div>
   <div class="form-card">
     <p class="intro">Have photos, ideas or details for a video? Send them here.</p>
-    <form id="assetForm">
+    <form id="assetForm" action="https://formsubmit.co/suryakrishnac.j@gmail.com" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="_subject" value="TechSparkKids - Video Asset Submission">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="hidden" name="_next" value="https://suryakrishnacj-web.github.io/suryakrishnacj-USERNAME.github.io/thanks.html">
       <div class="two">
         <label>Name<input required name="name" placeholder="Your name"></label>
         <label>Email<input required type="email" name="email" placeholder="you@example.com"></label>
       </div>
       <label>Video idea<textarea required name="idea" placeholder="Tell me what the video should be about..."></textarea></label>
-      <label>Asset link <input name="link" placeholder="Google Drive / other share link"></label>
+      <label>Asset link <input name="link" placeholder="Google Drive / OneDrive / other share link"></label>
+      <label>Upload photos/videos/files <input type="file" name="attachment" multiple accept="image/*,video/*,.pdf,.doc,.docx"></label>
       <label>Extra details<textarea name="details" placeholder="Anything else I should know?"></textarea></label>
-      <button class="btn primary" type="submit">Submit Video Request →</button>
-      <p class="note">This first version opens your email app with the submission details. A free online form backend can be connected later for automatic storage.</p>
+      <button class="btn primary" type="submit">Submit Online →</button>
+      <p class="note">Your submission stays on the website and is sent securely to the TechSparkKids inbox. It does not open Gmail.</p>
     </form>
   </div>
 </section>
@@ -76,10 +80,13 @@
   <div class="section-head"><span>03</span><h2>Ask Me</h2></div>
   <div class="form-card compact">
     <p class="intro">Have a question about technology, projects or TechSparkKids?</p>
-    <form id="askForm">
+    <form id="askForm" action="https://formsubmit.co/suryakrishnac.j@gmail.com" method="POST">
       <label>Your name<input required name="name" placeholder="Your name"></label>
       <label>Your question<textarea required name="question" placeholder="Type your question..."></textarea></label>
-      <button class="btn primary" type="submit">Send Question →</button>
+      <input type="hidden" name="_subject" value="TechSparkKids - Ask Me">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="hidden" name="_next" value="https://suryakrishnacj-web.github.io/suryakrishnacj-USERNAME.github.io/thanks.html">
+      <button class="btn primary" type="submit">Submit Question →</button>
     </form>
   </div>
 </section>
@@ -88,12 +95,41 @@
   <div class="section-head"><span>04</span><h2>Message to Me</h2></div>
   <div class="form-card compact">
     <p class="intro">Send a message to TechSparkKids.</p>
-    <form id="messageForm">
+    <form id="messageForm" action="https://formsubmit.co/suryakrishnac.j@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="TechSparkKids - Message">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="hidden" name="_next" value="https://suryakrishnacj-web.github.io/suryakrishnacj-USERNAME.github.io/thanks.html">
       <label>Name<input required name="name" placeholder="Your name"></label>
       <label>Email<input required type="email" name="email" placeholder="you@example.com"></label>
       <label>Message<textarea required name="message" placeholder="Write your message..."></textarea></label>
-      <button class="btn primary" type="submit">Send Message →</button>
+      <button class="btn primary" type="submit">Submit Message →</button>
     </form>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="section-head"><span>05</span><h2>Projects</h2></div>
+  <div class="about-grid">
+    <div class="glass"><h3>Arduino & ESP Projects</h3><p class="muted">Explore electronics, automation, sensors, robotics and other TechSparkKids experiments.</p></div>
+    <div class="glass"><h3>Video Projects</h3><p class="muted">Watch project demonstrations and follow new builds on the TechSparkKids YouTube channel.</p>
+      <a class="btn secondary" href="https://www.youtube.com/@TechSparkKids" target="_blank" rel="noopener">Open YouTube →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="links">
+  <div class="section-head"><span>06</span><h2>Quick Links</h2></div>
+  <div class="about-grid">
+    <div class="glass">
+      <h3>Give Assets</h3>
+      <p class="muted">Submit video ideas, links and files directly online.</p>
+      <a class="btn primary" href="#assets">Open Submission →</a>
+    </div>
+    <div class="glass">
+      <h3>Ask a Question</h3>
+      <p class="muted">Have a technology or project question?</p>
+      <a class="btn secondary" href="#ask">Ask Me →</a>
+    </div>
   </div>
 </section>
 </main>
