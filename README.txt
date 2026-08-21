@@ -3,10 +3,10 @@ TECHSPARKKIDS FINAL VERSION
 Changes:
 - Forms no longer use mailto or open Gmail.
 - Video Asset form supports both a share link and file uploads.
-- Online submissions are sent to the configured TechSparkKids inbox using FormSubmit.
+- Online submissions are sent to the configured techsparkkids inbox using FormSubmit.
 - Added Projects and Quick Links sections.
 - Added a thank-you page after online submission.
-- Kept the TechSparkKids profile.jpg.
+- Kept the techsparkkids profile.jpg.
 
 IMPORTANT:
 On the first FormSubmit submission, the receiving email address may need confirmation.
